@@ -12,13 +12,12 @@ Key training flow:
 ## Project Layout
 
 .
-├─ src/
-│ └─ train_vggface2_transfer_pytorch.py # main script (train & predict)
-├─ data_raw/
-│ ├─ person_a/ img1.jpg, img2.jpg, ...
-│ ├─ person_b/ ...
-│ └─ ...
-└─ models_vggface2/ # outputs (checkpoints per fold)
+src/
+  train_vggface2_transfer_pytorch.py # main script (train & predict)
+  data_raw/
+    person_a/ img1.jpg, img2.jpg, ...
+    person_b/
+  models_vggface2/ # outputs (checkpoints per fold)
 
 ## Environment
 
@@ -27,7 +26,8 @@ Key training flow:
 - `facenet-pytorch`
 - Pillow, NumPy
 
-Sources Studied
+Sources Studied:
+
 The Essential Guide to K-Fold Cross Validation
 https://medium.com/@bididudy/the-essential-guide-to-k-fold-cross-validation-in-machine-learning-2bcb58c50578
 
